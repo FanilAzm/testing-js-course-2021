@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "Evgeniy Khaberev <ehaberev@yandex.ru>",
+  "author": "Fanil Azmagulov",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.13.14",
