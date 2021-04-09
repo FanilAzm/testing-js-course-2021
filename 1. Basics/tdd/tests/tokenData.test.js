@@ -45,6 +45,6 @@ describe('tokenData class:', () => {
   //   const checkValue = token.checkTokenValue(enterValue);
 
   //   // Assert
-  //   expect(checkValue).toBe(exitValue);
+  //   expect(checkValue).toEqual(exitValue);
 	// });
 });

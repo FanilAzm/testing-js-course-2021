@@ -11,9 +11,9 @@ export default class tokenData {
 		// 	return false;
 		// }
 		
-		// const pattern = /^[A-Za-z0-9]+$/g;
-		// if(token === token.match(pattern)) {
-		// 	return token.substring(0, 7);
+		// if(token === token.match('/^[A-Za-z0-9]+$/g')) {
+		// 	token.slice(7);
+		// 	return token;
 		// }
 	}
 	async getTokenData(login, password) {

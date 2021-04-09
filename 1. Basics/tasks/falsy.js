@@ -1,11 +1,10 @@
 class TestForLies {
-  constructor(array, newArray) {
-    this.array = array;
-    this.newArray = newArray;
-	}
-	
-	removeFalsyValues(){
-		this.newArray = this.array.filter(Boolean);
+	removeFalsyValues(array){
+		// console.assert(Array.isArray(array), 'Аргумент не является массивом');
+		if(!Array.isArray(array)) {
+			throw new Error('Аргумент не является массивом');
+		}
+		return array.filter(item => !!item);
 	}
 }
 
