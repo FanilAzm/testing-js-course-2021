@@ -3,18 +3,20 @@ export default class tokenData {
 		if (token === '') {
 			 return null;
 		}
-		if(typeof token === 'string' && token.length > 1) {
-			return token;
+		
+		if(typeof token !== 'string') {
+			return false;
 		}
 
-		// if(token.length < 10) {
-		// 	return false;
-		// }
+		if(token.length < 10) {
+			return false;
+		}
 		
-		// if(token === token.match('/^[A-Za-z0-9]+$/g')) {
-		// 	token.slice(7);
-		// 	return token;
-		// }
+		token = token.slice(7);
+		if(!token.match('/^[A-Za-z0-9]+$/g')) {
+			return token;
+		}
+		return token;
 	}
 	async getTokenData(login, password) {
     const res = await fetch('api/auth', {
