@@ -3,16 +3,14 @@ export default class tokenData {
 		if (token === '') {
 			 return null;
 		}
-		
 		if(typeof token !== 'string') {
 			return false;
 		}
-
 		if(token.length < 10) {
 			return false;
 		}
-		
-		token = token.slice(7);
+
+		token = token.split('Bearer ')[1];
 		if(!token.match('/^[A-Za-z0-9]+$/g')) {
 			return token;
 		}
