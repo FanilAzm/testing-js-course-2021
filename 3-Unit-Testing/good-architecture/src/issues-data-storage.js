@@ -8,6 +8,11 @@ const IssuesDataStorage = class {
   constructor(dataService) {
     this.dataService = dataService;
     this._issues = this.dataService.loadEntities();
+    // let _self = this;
+    // this.dataService.loadEntities().then((data) => {
+    //   _self._issues = data;
+    // });
+
   }
 
   /**
