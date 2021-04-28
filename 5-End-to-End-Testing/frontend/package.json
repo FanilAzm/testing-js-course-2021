@@ -15,6 +15,7 @@
     "@webcomponents/webcomponentsjs": "git://github.com/webcomponents/webcomponentsjs.git#v1.0.0",
     "markdown": "^0.5.0",
     "navigo": "^7.1.2",
+    "node-fetch": "^2.6.1",
     "puppeteer": "^8.0.0",
     "whatwg-fetch": "^3.0.0"
   },
